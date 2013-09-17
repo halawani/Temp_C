@@ -29,8 +29,8 @@ int var = 1;
 
 /* Definitions for the Wifi connection */
 int status = WL_IDLE_STATUS;              // Stablish a WAP connection of the network
-char ssid[] = "RenQi WiFi 2";             // The network SSID (name)
-char pass[] = "z1yd-htb6-9ufj";           // The network password
+char ssid[] = "SSID";             // The network SSID (name)
+char pass[] = "PASSWORD";           // The network password
 unsigned int localPort = 2390;            // local port to listen for UDP packets for time server
 IPAddress timeServer(129, 6, 15, 28);     // Opening NTP server time.nist.gov
 const int NTP_PACKET_SIZE = 48;           // NTP time stamp is in the first 48 bytes of the message
@@ -44,8 +44,8 @@ int getret;
 float tempON;
 float tempOFF;
 char xivelyKey[] =                        // The Xively key to let you upload data
-"1ZKzgBO8YU6NFbxRwyAz8N7dPSE7A4w2wkBqxkNEy1xPTCRz";
-#define xivelyFeed 358590698              // The xively feed ID
+"XIVELY_KEY";
+#define xivelyFeed XIVELY_FEED              // The xively feed ID
 char sensor0ID[] = "Temp0";               // Define the datastreams' IDs
 char sensor1ID[] = "Temp1";
 char sensor2ID[] = "Temp2";
